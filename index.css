@@ -1,0 +1,128 @@
+/*-----------
+  custom properties
+-------------*/
+
+
+:root{
+    /*------ colors------*/
+    --clr-white:0, 0%, 100%;
+    --clr-light-gray:212, 45%, 89%;
+    --clr-grayish-blue:220, 15%, 55%;
+    --clr-dark-blue:218, 44%, 22%;
+    /*------fonts--------*/
+    --ff-serif: 'outfit', sans-serif;
+    --fw-700:700;
+    --fw-400:400;
+    --fs-p:0.938rem; 
+}
+
+
+/*-----------
+  css reset
+-------------*/
+*,
+*::before
+*::after{
+  box-sizing: border-box;
+}
+/*-----------reset margins-------------*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture{
+  margin: 0;
+}
+ /*-----------set up the body-------------*/
+
+body{
+  line-height: 1.5;
+  width:1440px;
+  min-height: 100vh;
+  text-align: center;
+  
+}
+/*-----------make images easier to work with-------------*/
+image,
+picture{
+  max-width: 100%;
+  display: block;
+}
+/*-----------make form element easier to work with-------------*/
+input,
+button,
+textarea,
+select{
+  font: inherit;
+}
+/*-----------remove animation for people who have turned them off-------------*/
+@media(prefers-reduced-motioned: reduce)
+{
+  *,
+*::before,
+*::after{
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto;
+  }
+}
+/*-----------
+  utility classes
+-------------*/
+.container{
+  display:grid;
+  width:400px;
+  height:650px;
+  grid-template-columns:repeat(200px,1fr);
+  grid-template-rows:200px,200px,200px;
+  padding: 1rem;
+  border-radius: 5%;
+  margin:30% auto;
+
+}
+img{
+  width:100%;
+  border-radius: 5%;
+
+}
+.bg-clr-white{
+    background-color: hsl(var(--clr-white));
+}
+.bg-clr-light-gray{
+    background-color: hsl(var(--clr-light-gray));
+}
+
+.bg-clr-grayish-blue{
+    background-color: hsl(var(--clr-grayish-blue));
+}
+.bg-clr-dark-blue{
+    background-color: hsl(var(--clr-dark-blue));
+}
+.fw-700{
+    font-weight:var(--fw-700);
+}
+.fw-400{
+    font-weight: var(--fw-400);
+}
+.ff-serif{
+  font-family: 'outfit',serif;
+}
+.fs-p{
+  font-size: var(--fs-p);
+}
+.txt-clr{
+  color:var(--clr-grayish-blue);
+}
+@media only screen and (max-width: 375px) {
+  .container{
+    display:flex;
+    flex-wrap: wrap;
+    margin:5%;
+  }
+
+  }
