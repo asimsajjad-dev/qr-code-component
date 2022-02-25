@@ -120,11 +120,10 @@ img{
 .txt-clr{
   color:var(--clr-grayish-blue);
 }
-@media only screen and (max-width: 375px) {
+@media(max-width: 375px) {
   .container{
     display:flex;
-    flex-wrap: wrap;
-    margin:5%;
+    width:100%;
   }
 
   }
