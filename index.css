@@ -121,6 +121,13 @@ img{
   color:var(--clr-grayish-blue);
 }
 @media(max-width: 375px) {
+  body{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   Width:375px;
+   min-height:100vh;
+  }
   .container{
     display:flex;
     flex-direction:column;
