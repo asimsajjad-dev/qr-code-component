@@ -84,8 +84,7 @@ select{
   grid-template-columns:repeat(200px,1fr);
   grid-template-rows:200px,200px,200px;
   padding: 1rem;
-  border-radius: 5%;
-  margin:30% auto;
+  border-radius:5%
 
 }
 img{
